@@ -7,7 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>@ViewBag.Title</title>
     @*<base href="/">*@
-
+    <script>document.write('<base href="' + document.location + '" />');</script>
+    <link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon"> 
     <link href="~/lib/css/bootstrap.css" rel="stylesheet" />
     <link href="~/lib/css/font-awesome.css" rel="stylesheet" />
     @RenderSection("styles", required: false)
