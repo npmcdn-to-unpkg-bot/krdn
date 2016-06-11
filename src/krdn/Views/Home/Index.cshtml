@@ -4,12 +4,15 @@
 
 @section styles
 {
-    <link href="~/lib/css/bootstrap.css" rel="stylesheet" />
+    @*<link href="~/lib/css/bootstrap.css" rel="stylesheet" />
     <link href="~/lib/css/jquery.fancybox.css" rel="stylesheet" />
     <link href="~/css/site.css" rel="stylesheet" />
     <link href="~/lib/css/alertify.core.css" rel="stylesheet" />
-    <link href="~/lib/css/alertify.bootstrap.css" rel="stylesheet" />
+    <link href="~/lib/css/alertify.bootstrap.css" rel="stylesheet" />*@
     @*<link href="~/lib/css/alertify.default.css" rel="stylesheet" />*@
+
+    <link rel="stylesheet" href="~/css/styles.css">
+    <link rel="stylesheet" href="~/css/sample.css">
 }
 
 <div id="nav-separator"></div>
@@ -26,7 +29,7 @@
 
 @section customScript
 {
-    System.import('app').catch(console.log.bind(console));
+    System.import('app/http/main').catch(console.log.bind(console));
     $(document).ready(function() {
         $('.fancybox').fancybox();
     });
