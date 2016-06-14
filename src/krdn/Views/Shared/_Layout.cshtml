@@ -9,10 +9,11 @@
     @*<base href="/">*@
     <script>document.write('<base href="' + document.location + '" />');</script>
     <link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon"> 
-    @*<link href="~/lib/css/bootstrap.css" rel="stylesheet" />*@
+    <link href="~/lib/css/bootstrap.css" rel="stylesheet" />
     <link href="~/lib/css/font-awesome.css" rel="stylesheet" />
     @RenderSection("styles", required: false)
   
+
     @*Solve IE 11 issues *@
     @*<script src="https://cdnjs.cloudflare.com/ajax/libs/es6-shim/0.33.3/es6-shim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.20/system-polyfills.js"></script>
@@ -30,7 +31,7 @@
     <script src="~/lib/js/systemjs.config.js"></script>
 
     <script src="~/lib/js/jquery.js"></script>
-    <script src="~/lib/js/bootstrap.js"></script>
+    <script src="~/lib/js/bootstrap.js"></script> 
 </head>
 <body>
     <div>
