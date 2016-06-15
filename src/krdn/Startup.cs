@@ -24,7 +24,6 @@ namespace PhotoGallery
         private static string _contentRootPath = string.Empty;
         public Startup(IHostingEnvironment env)
         {
-            // 테스트 push
             _applicationPath = env.WebRootPath;
             _contentRootPath = env.ContentRootPath;
             // Setup configuration sources.
